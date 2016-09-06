@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_sdna_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/iv_sdna_projectimg"
+            android:layout_width="match_parent"
+            android:layout_height="215dp"
+            android:contentDescription="@string/project_info"
+            android:scaleType="fitXY"
+            android:src="@drawable/activity_new_bitmap" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/iv_sdna_projectimg"
+            android:baselineAligned="false" >
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/project_bg_left"
+                android:gravity="center_vertical"
+                android:paddingLeft="12dp" >
+
+                <TextView
+                    android:id="@+id/tv_sdna_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:drawableLeft="@drawable/address_icon"
+                    android:drawablePadding="3dp"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    tools:text = "bbb"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/project_bg_right"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/tv_sdna_lookDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/view"
+                    android:drawablePadding="5dp"
+                    android:textColor="@color/white"
+                    tools:text = "aaa"
+                    android:textSize="15sp" />
+
+                <View
+                    android:id="@+id/view_sdna_4"
+                    android:layout_width="0.5dp"
+                    android:layout_height="13dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/divide_background" />
+
+                <TextView
+                    android:id="@+id/tv_sdna_attentionDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/attention"
+                    android:drawablePadding="5dp"
+                    android:paddingRight="12dp"
+                    tools:text = "ccc"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_project_detail_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="13dp"
+        android:paddingLeft="13dp"
+        android:paddingRight="13dp" >
+
+        <RelativeLayout
+            android:id="@+id/rl_project_title"
+            android:layout_width="match_parent"
+            android:layout_height="45dp" >
+
+            <ImageView
+                android:id="@+id/iv_project_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/project_more"
+                android:contentDescription="@string/project_info" />
+
+            <TextView
+                android:id="@+id/tv_project_title"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@id/iv_project_more"
+                android:background="@color/white"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textColor="@color/text_color_1"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/project_desc_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/rl_project_title"
+            android:layout_below="@id/rl_project_title"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="#999999"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_project_detail_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="13dp"
+        android:paddingRight="13dp" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/divide_background" />
+
+        <TextView
+            android:id="@+id/tv_project_terrtory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/project_terrtory"
+            android:drawablePadding="6dp"
+            android:gravity="center_vertical"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:textColor="@color/text_color_2"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/divide_background" />
+
+        <TextView
+            android:id="@+id/tv_project_lingyu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/project_ling"
+            android:drawablePadding="7dp"
+            android:gravity="center_vertical"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:textColor="@color/text_color_2"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/divide_background" />
+
+        <RelativeLayout
+            android:id="@+id/rl_project_plan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_project_plan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@mipmap/project_invest_new"
+                android:drawablePadding="6dp"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/project_plan"
+                android:textColor="@color/text_color_2"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_project_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3dp"
+                android:layout_toRightOf="@id/tv_project_plan"
+                android:textColor="@color/red"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_money_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3dp"
+                android:layout_toRightOf="@id/tv_project_money"
+                android:textColor="@color/text_color_2"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_already_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@id/tv_money_unit"
+                android:text="@string/project_already"
+                android:textColor="@color/text_color_2"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_already"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3dp"
+                android:layout_toRightOf="@id/tv_already_money"
+                android:textColor="@color/red"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_money_unit2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3dp"
+                android:layout_toRightOf="@id/tv_already"
+                android:textColor="@color/text_color_2"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include layout="@layout/div_line_two"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/team_info_intro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/team_info"
+            android:textSize="16sp"
+            android:textColor="@color/text_color_1"/>
+
+    </RelativeLayout>
+
+    <include layout="@layout/div_line_one"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/tv_team_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/team_introduce"
+            android:textColor="@color/text_color_1"
+            android:drawableLeft="@mipmap/pro_introduce_left"
+            android:drawablePadding="5dp"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_team_info"
+            android:layout_marginTop="10dp"
+            android:textSize="14sp"
+            android:textColor="@color/text_color_2"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/tv_center_person"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/team_person"
+            android:textColor="@color/text_color_1"
+            android:drawableLeft="@mipmap/pro_introduce_left"
+            android:drawablePadding="5dp"
+            android:textSize="14sp"/>
+
+    </RelativeLayout>
+
+    <com.yeebee.invest.views.MyHorizontalScrollView
+        android:id="@+id/id_horizontalScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_gravity="center_vertical"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/ll_gallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </com.yeebee.invest.views.MyHorizontalScrollView>
+
+    <include layout="@layout/div_line_two"></include>
+
+    <LinearLayout
+        android:id="@+id/ll_leave_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/project_words"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/message_information"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/project_words_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/project_info"
+                android:src="@mipmap/goto_activity" />
+
+            <TextView
+                android:id="@+id/project_words_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:layout_toLeftOf="@id/project_words_more" />
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/message_div"
+            android:visibility="gone"
+            layout="@layout/div_line_one" />
+
+        <include
+            android:id="@+id/viewstub"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/project_message_item"/>
+
+        <LinearLayout
+            android:id="@+id/ll_project_words"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <include layout="@layout/div_line_one" />
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp" >
+
+                <com.dream.makerspace.views.RoundImageView
+                    android:id="@+id/project_words_img"
+                    android:layout_width="65dip"
+                    android:layout_height="65dip"
+                    android:src="@drawable/empty_photo" />
+
+                <TextView
+                    android:id="@+id/project_words_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/project_words_img"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/project_words_img"
+                    android:textColor="@color/orange_background" />
+
+                <TextView
+                    android:id="@+id/project_words_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/project_words_name"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/project_words_img"
+                    android:textColor="@color/homepage_creater_desc_bg" />
+
+                <TextView
+                    android:id="@+id/project_words_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/project_words_img"
+                    android:layout_marginTop="10dp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="#EDEDED"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:drawableLeft="@mipmap/pull_arrow"
+                android:drawablePadding="12dp"
+                android:gravity="center"
+                android:text="@string/project_filling"
+                android:textColor="#797979" />
+        </LinearLayout>
+
+        <include layout="@layout/div_line_one" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yeebee.invest.views.TopBar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/topBar"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    custom:leftBackground="@drawable/img_back"
+    custom:leftText=""
+    custom:leftTextColor="#FFFFFF"
+    custom:rightBackground="@android:color/transparent"
+    custom:rightText=""
+    custom:rightTextColor="#333333"
+    custom:title="自定义标题"
+    custom:titleTextColor="#333333"
+    custom:titleTextSize="14.0sp">
+</com.yeebee.invest.views.TopBar>
+
+

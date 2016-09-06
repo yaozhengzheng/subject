@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="orange_new">#FD9110</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="white_undertint">#E5C5BC</color>
+    <color name="white_undertint_two">#EFA87F</color>
+    <color name="white_undertint_three">#F8B489</color>
+    <color name="white_undertint_fore">#D6D6D6</color>
+    <color name="divide_background_wide_inside">#DDDDDD</color>
+    <color name="divide_background_wide">#eeeeee</color><!--分割线 、、背景-->
+    <color name="divide_background">#DDDDDD</color><!--分割线 -->
+    <color name="text_color_1">#333333</color>
+    <color name="text_color_2">#666666</color>
+    <color name="text_color_3">#999999</color>
+    <color name="look_project_refresh_count">#FE564F</color>
+    <color name="look_project_refresh">#FFAE00</color>
+    <color name="project_unit">#3CC5EA</color>
+    <color name="red">#FF0000</color>
+    <color name="orange_background">#FE8A00</color><!--橘黄色 -->
+    <color name="homepage_creater_desc_bg">#797979</color>
+    <color name="login">#FFE109</color>
+    <color name="remind_item">#11000000</color>
+    <color name="editview_frame">#8aa19d</color>
+
+</resources>

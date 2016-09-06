@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <include
+        android:id="@+id/look_project_head"
+        layout="@layout/person_info"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/look_project_head"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true">
+                <TextView
+                    android:id="@+id/tv_mate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:text="@string/look_project_mate"
+                    android:textColor="@color/text_color_1"/>
+
+                <TextView
+                    android:id="@+id/tv_refresh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:layout_marginTop="3dp"
+                    android:layout_below="@id/tv_mate"
+                    android:text="@string/look_project_refresh_content"
+                    android:textColor="@color/text_color_3"/>
+
+                <TextView
+                    android:id="@+id/tv_refresh_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="111"
+                    android:layout_toRightOf="@id/tv_refresh"
+                    android:layout_alignBaseline="@id/tv_refresh"
+                    android:layout_marginLeft="3dp"
+                    android:textColor="@color/look_project_refresh_count"
+                    />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/look_project_more"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/text_color_3"
+                android:layout_centerVertical="true"/>
+
+            <View
+                android:id="@+id/view_5"
+                android:layout_width="1dp"
+                android:layout_height="15dp"
+                android:background="@color/divide_background"
+                android:layout_toLeftOf="@id/tv_more"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                ></View>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/look_project_refresh"
+                android:layout_toLeftOf="@id/view_5"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/look_project_refresh"/>
+        </RelativeLayout>
+
+        <include layout="@layout/div_line_one"></include>
+
+        <ListView
+            android:id="@+id/lv_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            ></ListView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_bind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/look_project_bind"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginRight="40dp"/>
+
+
+
+</RelativeLayout>

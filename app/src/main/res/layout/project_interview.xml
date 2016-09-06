@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <include
+            android:id="@+id/look_project_head"
+            layout="@layout/person_info"></include>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:id="@+id/rl_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    >
+                    <ImageView
+                        android:id="@+id/iv_edit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/project_interview_unpoint"
+                        android:layout_centerInParent="true"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/divide_background"
+                        android:layout_toLeftOf="@id/iv_edit"
+                        android:layout_centerVertical="true"></View>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/divide_background"
+                        android:layout_toRightOf="@id/iv_edit"
+                        android:layout_centerVertical="true"></View>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/project_interview_edit"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/rl_edit"
+                    android:textColor="@color/text_color_1"
+                    android:layout_marginTop="3dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:id="@+id/rl_edit_sure"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    >
+                    <ImageView
+                        android:id="@+id/iv_edit2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/project_interview_unpoint"
+                        android:layout_centerInParent="true"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/divide_background"
+                        android:layout_toLeftOf="@id/iv_edit2"
+                        android:layout_centerVertical="true"></View>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/divide_background"
+                        android:layout_toRightOf="@id/iv_edit2"
+                        android:layout_centerVertical="true"></View>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/project_interview_sure"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/rl_edit_sure"
+                    android:textColor="@color/text_color_3"
+                    android:layout_marginTop="3dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:id="@+id/rl_edit_head"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    >
+                    <ImageView
+                        android:id="@+id/iv_edit3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/project_interview_unpoint"
+                        android:layout_centerInParent="true"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/divide_background"
+                        android:layout_toLeftOf="@id/iv_edit3"
+                        android:layout_centerVertical="true"></View>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/divide_background"
+                        android:layout_toRightOf="@id/iv_edit3"
+                        android:layout_centerVertical="true"></View>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/project_interview_complid"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/rl_edit_head"
+                    android:textColor="@color/text_color_3"
+                    android:layout_marginTop="3dp"/>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <include layout="@layout/div_line_one"></include>
+
+        <include layout="@layout/project_info"></include>
+
+        <include layout="@layout/div_line_two"></include>
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_centerVertical="true"
+
+                android:text="@string/interview_info"
+                android:textColor="@color/text_color_1"/>
+
+            <TextView
+                android:id="@+id/tv_cancle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="@string/cancel"
+                android:textColor="@color/text_color_2"
+                android:layout_centerVertical="true"
+                android:textSize="14sp"/>
+            
+            <View
+                android:id="@+id/view_6"
+                android:layout_width="1dp"
+                android:layout_height="20dp"
+                android:background="@color/divide_background"
+                android:layout_toLeftOf="@id/tv_cancle"
+                android:layout_marginRight="5dp"
+                android:layout_centerVertical="true"></View>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/edite"
+                android:layout_toLeftOf="@id/view_6"
+                android:layout_marginRight="5dp"
+                android:textSize="14sp"
+                android:layout_centerVertical="true"
+                android:textColor="@color/look_project_refresh"/>
+
+        </RelativeLayout>
+
+        <include layout="@layout/div_line_one"></include>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:paddingLeft="12dp">
+            <RelativeLayout
+                android:id="@+id/rl_time_1"
+                android:layout_width="65dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/tv_time_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/interview_time"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/text_color_1"
+                    android:textSize="14sp"
+                    />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_time"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+                    <ImageView
+                        android:id="@+id/iv_time_rebind"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/home_information_1"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@id/iv_time_rebind"
+                        android:text="@string/reconfer"
+                        android:layout_centerVertical="true"/>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:background="@color/divide_background"></View>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/rl_time"
+                android:layout_toRightOf="@id/rl_time_1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                android:hint="@string/hint_choice"
+                android:textSize="14sp"
+                android:textColor="@color/text_color_3"
+                />
+        </RelativeLayout>
+
+        <include layout="@layout/div_line_one"></include>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:paddingLeft="12dp">
+            <RelativeLayout
+                android:id="@+id/rl_address1"
+                android:layout_width="65dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/tv_address_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/interview_address"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/text_color_1"
+                    android:textSize="14sp"
+                    />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_address"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+                    <ImageView
+                        android:id="@+id/iv_address_rebind"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/home_information_1"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@id/iv_address_rebind"
+                        android:text="@string/reconfer"
+                        android:layout_centerVertical="true"/>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:background="@color/divide_background"></View>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/rl_address"
+                android:layout_toRightOf="@id/rl_address1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                android:hint="@string/hint_choice"
+                android:textSize="14sp"
+                android:textColor="@color/text_color_3"
+                />
+        </RelativeLayout>
+
+        <include layout="@layout/div_line_one"></include>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:paddingLeft="12dp">
+            <RelativeLayout
+                android:id="@+id/rl_contact1"
+                android:layout_width="65dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/tv_contact_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/contact"
+                    android:textSize="14sp"
+                    android:textColor="@color/text_color_1"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/rl_contact1"
+                android:layout_marginRight="12dp"
+                android:singleLine="true"
+                android:layout_centerVertical="true"
+                android:textSize="14sp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/text_color_3"
+                android:hint="@string/must_input"
+                android:ellipsize="end"/>
+
+        </RelativeLayout>
+
+        <include layout="@layout/div_line_one"></include>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:paddingLeft="12dp">
+            <RelativeLayout
+                android:id="@+id/rl_tel"
+                android:layout_width="65dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/tv_tel_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/must_tel"
+                    android:textSize="14sp"
+                    android:textColor="@color/text_color_1"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_tel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/rl_tel"
+                android:layout_marginRight="12dp"
+                android:singleLine="true"
+                android:layout_centerVertical="true"
+                android:textSize="14sp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/text_color_3"
+                android:hint="@string/must_input"
+                android:ellipsize="end"/>
+
+        </RelativeLayout>
+
+        <include layout="@layout/div_line_one"></include>
+
+        <include layout="@layout/div_line_two"></include>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_centerVertical="true"
+
+            android:text="@string/word_info"
+            android:textColor="@color/text_color_1"/>
+
+        </RelativeLayout>
+
+        <include layout="@layout/div_line_one"></include>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:minHeight="120dp"
+            android:layout_height="100dp"
+            android:background="@color/white"
+            android:hint="@string/hint_word"
+            android:textSize="14sp"
+            android:gravity="top"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="6dp"
+            android:maxLength="120"
+            android:textColor="@color/text_color_3"/>
+
+        <include layout="@layout/div_line_one"></include>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+            <TextView
+                android:id="@+id/tv_submit"
+                android:layout_width="200dp"
+                android:layout_height="35dp"
+                android:text="@string/interview"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:background="@drawable/orange_bg_white_text_style"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
